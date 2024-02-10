@@ -60,7 +60,7 @@ h1 {
 /* Styliser la section */
 .part1 {
   height: 80vh;
-  min-height: 500px;
+  min-height: 600px;
   max-height: 700px;
   display: flex;
   padding: 5% 0;
@@ -126,7 +126,7 @@ h1 {
   color: white;
   font-size: 16px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.4s !important;
   text-align: left;
   font-family: "Urbanist", sans-serif;
 }
