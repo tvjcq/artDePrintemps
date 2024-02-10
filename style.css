@@ -70,16 +70,17 @@ h1 {
 }
 
 /* Styliser l'image */
-.part1 .image {
+#right {
   width: 60%;
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .containerImage {
   height: 100%;
+  width: 80%;
 }
 
 .part1 .image img {
