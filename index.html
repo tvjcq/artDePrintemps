@@ -127,18 +127,6 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
-
-      const text = document.querySelector(".circleText");
-
-      text.innerHTML = text.innerText
-        .split("")
-        .map((char, i) => {
-          const cls = (i > 7 && i < 17) || i > 24 ? "active" : "";
-          return `<span class="${cls}" style="transform: translateY(-50%) rotate(${
-            (i + 1) * 10
-          }deg)" data="${i}" >${char}</span>`;
-        })
-        .join("");
     </script>
   </body>
 </html>
