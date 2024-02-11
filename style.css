@@ -167,6 +167,101 @@ h1 {
   height: 50px;
 }
 
+.part2 {
+  height: 80vh;
+  min-height: 600px;
+  max-height: 700px;
+  display: flex;
+  padding: 5% 0;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 25vh 0 15vh 0;
+}
+
+.left2 {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.right2 {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Urbanist", sans-serif;
+}
+
+.containerImage2 {
+  position: absolute;
+  top: -50px;
+  left: 50px;
+  height: 400px;
+  width: 250px;
+}
+
+.containerImage3 {
+  position: absolute;
+  bottom: -50px;
+  left: 150px;
+  height: 400px;
+  width: 350px;
+}
+
+.part2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btnVideo {
+  height: 150px;
+  width: 150px;
+  font-family: "Urbanist", sans-serif;
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  background-color: #ffffff81;
+  backdrop-filter: blur(10px);
+  border-radius: 50%;
+  border: none;
+  transition: 0.4s !important;
+}
+
+.btnVideo:hover {
+  background-color: #ffffffb3;
+  cursor: pointer;
+}
+
+.btnVideo i {
+  font-size: 40px;
+  color: var(--black-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+}
+
+.iconPalette {
+  font-size: 50px;
+}
+
+.discover {
+  height: 50px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.discover p {
+  font-weight: 700;
+}
+
 @media screen and (min-width: 1342px) {
   h1 {
     font-size: 251px; /* Taille de police pour les écrans plus grands */

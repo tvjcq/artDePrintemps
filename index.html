@@ -35,7 +35,11 @@
       </div>
       <section class="part1">
         <div class="image" id="right">
-          <div class="containerImage">
+          <div
+            class="containerImage"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
             <img src="assets/imageRight.jpg" alt="" />
           </div>
         </div>
@@ -73,6 +77,42 @@
           <!-- TODO Flèches pour carroussel image à droite + JS -->
         </div>
       </section>
+      <section class="part2">
+        <div class="left2">
+          <div class="containerImage2" data-aos="fade-right">
+            <img src="assets/imageLeft.jpg" alt="" />
+          </div>
+          <div class="containerImage3" data-aos="fade-left">
+            <img src="assets/imageLeft2.jpg" alt="" />
+          </div>
+          <button class="btnVideo" data-aos="fade-right">
+            <i class="fa-solid fa-play"></i>
+          </button>
+        </div>
+        <div class="right2">
+          <h2 class="title2" data-aos="fade-left">
+            Nos<br />
+            Artistes
+          </h2>
+          <p data-aos="fade-left">
+            Découvrez les artistes qui ont façonné l'Art de Printemps. Des
+            maîtres de la lumière et de la couleur, des visionnaires qui ont
+            capturé l'essence de la nature et de la vie. Chaque œuvre est une
+            invitation à la contemplation et à l'émerveillement.
+          </p>
+          <div class="hyperlink">
+            <button data-aos="fade-left">
+              <div class="icon">
+                <i class="fa-solid fa-palette iconPalette"></i>
+              </div>
+              <div class="discover">
+                <span>Découvrir nos</span>
+                <p>Artistes</p>
+              </div>
+            </button>
+          </div>
+        </div>
+      </section>
       <!-- <section data-aos="fade-right">
         <h2>Accueil</h2>
         <p>
@@ -87,6 +127,18 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+
+      const text = document.querySelector(".circleText");
+
+      text.innerHTML = text.innerText
+        .split("")
+        .map((char, i) => {
+          const cls = (i > 7 && i < 17) || i > 24 ? "active" : "";
+          return `<span class="${cls}" style="transform: translateY(-50%) rotate(${
+            (i + 1) * 10
+          }deg)" data="${i}" >${char}</span>`;
+        })
+        .join("");
     </script>
   </body>
 </html>
