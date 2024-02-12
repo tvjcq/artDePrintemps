@@ -262,9 +262,31 @@ h1 {
   font-weight: 700;
 }
 
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  text-align: center;
+}
+
+footer p {
+  margin: 5px 0;
+  font-family: "Urbanist", sans-serif;
+  font-size: 10px;
+  color: #303030;
+  font-weight: 200;
+}
+
+footer a {
+  text-decoration: underline #303030;
+  color: #303030;
+  font-weight: 500;
+}
+
 @media screen and (min-width: 1342px) {
   h1 {
-    font-size: 251px; /* Taille de police pour les écrans plus grands */
+    font-size: 251px;
   }
   #underline {
     transform: translateY(-40px);
