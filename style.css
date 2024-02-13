@@ -193,6 +193,10 @@ h1 {
   color: var(--black-color);
 }
 
+#inactive:hover {
+  cursor: unset;
+}
+
 #inactive i {
   color: var(--black-color);
 }
