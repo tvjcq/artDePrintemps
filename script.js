@@ -12,10 +12,8 @@ button1.addEventListener("click", redirectTo404);
 button2.addEventListener("click", redirectTo404);
 button3.addEventListener("click", redirectTo404);
 
-// Tableau des images du carrousel
 var images = ["assets/imageRight.jpg", "assets/imageRight2.jpeg"];
 
-// Index de l'image actuellement affichée
 var currentIndex = 0;
 
 var inactiveButton = document.getElementById("inactive");
@@ -41,8 +39,6 @@ activeButton.addEventListener("click", function () {
     displayImage();
   }
 
-  // Désactive le bouton "active" s'il n'y a plus d'images à droite
-
   var tempId = activeButton.id;
   activeButton.id = inactiveButton.id;
   inactiveButton.id = tempId;
@@ -58,18 +54,18 @@ function fadeOut(imgElement, callback) {
 
   function frame(time) {
     if (lastTime !== null) {
-      opacity -= (time - lastTime) * 0.003; // Diminue l'opacité de 0.001 par milliseconde
-      imgElement.style.opacity = Math.max(opacity, 0); // Limite l'opacité à 0
+      opacity -= (time - lastTime) * 0.003;
+      imgElement.style.opacity = Math.max(opacity, 0);
     }
     lastTime = time;
     if (opacity > 0) {
-      requestAnimationFrame(frame); // Continue l'animation tant que l'opacité est supérieure à 0
+      requestAnimationFrame(frame);
     } else {
-      callback(); // Appelle la fonction de rappel lorsque l'animation est terminée
+      callback();
     }
   }
 
-  requestAnimationFrame(frame); // Démarre l'animation
+  requestAnimationFrame(frame);
 }
 
 function fadeIn(imgElement) {
@@ -78,19 +74,18 @@ function fadeIn(imgElement) {
 
   function frame(time) {
     if (lastTime !== null) {
-      opacity += (time - lastTime) * 0.003; // Augmente l'opacité de 0.001 par milliseconde
-      imgElement.style.opacity = Math.min(opacity, 1); // Limite l'opacité à 1
+      opacity += (time - lastTime) * 0.003;
+      imgElement.style.opacity = Math.min(opacity, 1);
     }
     lastTime = time;
     if (opacity < 1) {
-      requestAnimationFrame(frame); // Continue l'animation tant que l'opacité est inférieure à 1
+      requestAnimationFrame(frame);
     }
   }
 
-  requestAnimationFrame(frame); // Démarre l'animation
+  requestAnimationFrame(frame);
 }
 
-// Fonction pour afficher l'image actuelle
 function displayImage() {
   var imgElement = document.querySelector(".containerImage img");
   if (imgElement) {
