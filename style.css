@@ -163,8 +163,34 @@ h1 {
 
 .carousel button {
   border-radius: 100%;
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
+  border: solid 2px var(--black-color);
+  transition: all 0.3s ease;
+}
+
+.carousel button i {
+  font-size: 22px;
+  color: var(--black-color);
+  transition: all 0.3s ease;
+}
+
+#active {
+  background-color: var(--black-color);
+  color: var(--background-color);
+}
+
+#active i {
+  color: var(--background-color);
+}
+
+#inactive {
+  background-color: var(--background-color);
+  color: var(--black-color);
+}
+
+#inactive i {
+  color: var(--black-color);
 }
 
 .part2 {
