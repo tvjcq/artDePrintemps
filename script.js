@@ -13,7 +13,7 @@ button2.addEventListener("click", redirectTo404);
 button3.addEventListener("click", redirectTo404);
 
 // Tableau des images du carrousel
-var images = ["assets/imageRight.jpg", "assets/imageLeft.jpg"];
+var images = ["assets/imageRight.jpg", "assets/imageRight2.jpeg"];
 
 // Index de l'image actuellement affichée
 var currentIndex = 0;
